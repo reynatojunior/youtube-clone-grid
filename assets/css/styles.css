@@ -1,0 +1,86 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 56px 968px 200px;
+    grid-template-areas: "header header header header header"
+    "sidebar main main main main"
+    
+    "footer footer footer footer footer"   
+    ;
+}
+
+header{
+    background-color: #FFFFFF;
+    grid-area: header;
+    display: grid;
+    
+}
+.topo{
+    display: grid; /* Define o container como um grid container */
+    grid-template-columns: repeat(5, 1fr); /* Cria 3 colunas iguais */
+    gap: 10px; /* Espaço entre as células da grid */
+}
+
+#logo{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+#search{
+    margin-top: 10px;
+    margin-left: 90%;
+}
+
+#profile{
+    grid-column: 5;
+    margin-top: 10px;
+    margin-left: 50%;
+}
+
+main{
+    background-color: #F9F9F9;
+    grid-area: main;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Espaçamento entre os itens do grid */
+}
+
+.item {
+    width: 282px;
+    height: 262px;
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    
+}
+
+aside{
+    background-color: #FFFFFF;
+    grid-area: sidebar;
+    height: 100%;
+
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    }
+
+.menu > svg{
+    padding-top: 20px;
+}
+/*
+footer{
+    background-color: yellowgreen;
+    grid-area: footer;
+}*/
